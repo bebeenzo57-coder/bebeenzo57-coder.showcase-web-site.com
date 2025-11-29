@@ -1,0 +1,214 @@
+/* Style général */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e2e, #2d2d44);
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    scrollbar: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #ffcb42;
+}
+
+header p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* Carte */
+.card {
+    background: #ffffff10;
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px #00000050;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #ffcb42;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Bouton */
+button {
+    background: #ffcb42;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #ffdd70;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* Container horizontal */
+.image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: nowrap; /* reste horizontal */
+    overflow-x: auto; /* permet de slider si trop large */
+    padding-bottom: 10px;
+}
+
+/* Images */
+.service-img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.45);
+    transition: 0.3s ease;
+}
+
+/* Effet rebond */
+.service-img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px #ffcb42;
+}
+
+
+/*BOUTON*/
+.btn {
+    display: inline-block;
+    background: #ffcb42;      /* jaune */
+    color: black;             /* texte noir */
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #ffdd70;      /* jaune plus clair */
+    transform: scale(1.05);
+}
+
+/* Conteneur des cards */
+.services-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: nowrap; /* pour rester horizontal */
+    overflow-x: auto; /* scroll si l'écran est petit */
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff10;
+    width: 300px;       /* largeur fixe pour rester horizontal */
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 10px #00000050;
+    text-align: center;
+    flex-shrink: 0; /* empêche les cards de se casser */
+}
+
+/* Container horizontal */
+.services-row {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    padding: 40px 20px;
+}
+
+/* Images dans les cards */
+.card {
+    width: 300px;
+    flex-shrink: 0;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.card .service-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+/* Effet flou par défaut */
+.card.dimmed {
+    transform: scale(0.85);
+    opacity: 0.6;
+}
+
+.card.dimmed .service-img {
+    filter: blur(2px);
+}
+
+/* La card centrée = bombée */
+.card.active {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.card.active .service-img {
+    filter: blur(0);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+
+
+.gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+}
+
+.scroll-img {
+    width: 250px;
+    height: 170px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+    scroll-snap-align: center;
+    filter: blur(3px) brightness(0.7);
+    transform: scale(0.9);
+    box-shadow: 0 5px 15px #0003;
+}
+
+.scroll-img.active {
+    transform: scale(1.1);
+    filter: blur(0) brightness(1);
+    box-shadow: 0 10px 25px #0004;
+}

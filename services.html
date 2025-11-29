@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services – Tamarind Tree Hotel</title>
+    <link rel="stylesheet" href="EB 1 .css">
+</head>
+
+
+
+
+<body>
+
+    <header>
+        <h1>Tamarind Tree Hotel</h1>
+        <p>Découvrez nos services premium</p>
+    </header>
+<div class="services-row">
+    <section class="card">
+        <h2>Massage & Spa</h2>
+        <img src="https://i.pinimg.com/736x/59/5e/a1/595ea134abe1adcc73ea62b409e1d9b7.jpg" class="service-img">
+        <p>
+            Relaxez-vous dans notre espace spa entièrement équipé avec massages, soins relaxants et ambiance zen.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Chambres & Suites</h2>
+        <img src="https://i.pinimg.com/736x/3a/b4/83/3ab483136d2f1257b72e615d49e3e37b.jpg" class="service-img">
+        <p>
+            Nos chambres modernes offrent confort, calme et élégance avec vue magnifique.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Restaurant & Lunch</h2>
+        <img src="https://i.pinimg.com/736x/53/56/e7/5356e7c038896aace04d376a92011578.jpg" class="service-img">
+        <p>
+            Profitez d’un restaurant gastronomique et d’un lunch délicieux préparé par nos chefs.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Restaurant & Lunch</h2>
+        <img src="https://i.pinimg.com/736x/da/d9/66/dad966eeb126b3106257ffcdb5b21a98.jpg" class="service-img">
+        <p>
+            Profitez d’un restaurant gastronomique et d’un lunch délicieux préparé par nos chefs.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Restaurant & Lunch</h2>
+        <img src="https://i.pinimg.com/736x/da/d9/66/dad966eeb126b3106257ffcdb5b21a98.jpg" class="service-img">
+        <p>
+            Profitez d’un restaurant gastronomique et d’un lunch délicieux préparé par nos chefs.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Restaurant & Lunch</h2>
+        <img src="https://i.pinimg.com/736x/da/d9/66/dad966eeb126b3106257ffcdb5b21a98.jpg" class="service-img">
+        <p>
+            Profitez d’un restaurant gastronomique et d’un lunch délicieux préparé par nos chefs.
+        </p>
+    </section>
+</div>
+    <section class="card">
+        <h2>Contact</h2>
+        <p><strong>Téléphone :</strong> +91 7696066712</p>
+        <p><strong>Email :</strong> Tamarind-treehotel@gmail.com</p>
+
+        <a href="index.html" class="btn">Back to HOME</a>
+    </section>
+    
+
+    <footer>
+        <p>© 2025 – Tamarind Tree Hotel</p>
+    </footer>
+
+
+<script>
+const images = document.querySelectorAll('.service-img');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+
+            images.forEach(img => img.classList.remove('active'));
+            entry.target.classList.add('active');
+        }
+    });
+}, {
+    root: document.querySelector('.gallery'),
+    threshold: 0.25,  
+    rootMargin: "0px -20% 0px -20%"  
+});
+
+images.forEach(img => observer.observe(img));
+
+images[0].classList.add('active'); 
+</script>
+
+
+
+
+</body>
+</html> 
