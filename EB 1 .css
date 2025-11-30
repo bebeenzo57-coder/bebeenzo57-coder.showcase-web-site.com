@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1e1e2e, #2d2d44);
+   
     color: white;
     font-family: "Poppins", Arial, sans-serif;
     scrollbar: none;
@@ -217,4 +217,5 @@ footer {
     box-shadow: 0 10px 25px #0004;
 
 }
+
 
