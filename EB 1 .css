@@ -6,13 +6,10 @@ body {
     color: white;
     font-family: "Poppins", Arial, sans-serif;
     scrollbar: none;
-}
-
-
-body {
     background: url("https://i.pinimg.com/1200x/9a/7f/b0/9a7fb09ce5e9ae80666e0e4b3be6a243.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
 
 
 /* Header */
@@ -220,3 +217,4 @@ footer {
     box-shadow: 0 10px 25px #0004;
 
 }
+
